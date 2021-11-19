@@ -1,5 +1,127 @@
 /*
     Tudo que será usado várias vezes e em vários lugares no CSS, ficará aqui
     Esse será um arquivo GLOBAL do CSS
-
 */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap");
+:root {
+    --cor-fundo: #f3fbe6;
+    --cor-primaria: #c7f878;
+    --cor-primaria-escura: #affc32;
+    --cor-secundaria: #f2fbb0;
+    --cor-texto: #000;
+
+    --fonte-texto: "Poppins", sans-serif;
+}
+
+* {
+    font-family: var(--fonte-texto);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--cor-texto);
+}
+
+body {
+    background-color: var(--cor-fundo);
+    background-image: url("../images//Polygons.png");
+    background-repeat: no-repeat;
+    background-position-y: 500px;
+    background-position-x: 200px;
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    grid-gap: 23px;
+    align-items: center;
+}
+
+.menu img {
+    max-height: 90px;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.menu li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menu .menu_item:hover {
+    background: var(--cor-secundaria);
+}
+
+.separator {
+    font-size: 14px;
+    color: #a8a8b3;
+    display: flex;
+
+    align-items: center;
+}
+
+.separator::before {
+    content: "";
+    flex: 1;
+    height: 3px;
+    background: #cbdd13;
+    margin: 0 15vw;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.conteudo_esquerdo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo_direito {
+    display: flex;
+
+    justify-content: center;
+    align-items: end;
+}
+
+.conteudo_direito ul {
+    list-style-type: none;
+    display: flex;
+    grid-gap: 45px;
+    flex-direction: column;
+}
+
+.conteudo_direito li {
+    display: flex;
+
+    background-color: white;
+    padding: 0 10px;
+    border-radius: 6px;
+    -webkit-box-shadow: 4px 7px 14px 4px rgba(0, 0, 0, 0.32);
+    box-shadow: 4px 7px 14px 4px rgba(0, 0, 0, 0.32);
+    transition: all 0.5s;
+}
+
+.conteudo_direito li:hover{
+    transform: scale(1.05);
+}
+.conteudo_direito li a {
+   
+    cursor: pointer;
+}
+
+.conteudo_direito img {
+    width: 93px;
+    height: 105px;
+    transform: rotate(-10deg) scaleX(-1);
+}
+
+.item_ativo {
+    border: 5px solid var(--cor-primaria-escura);
+}
