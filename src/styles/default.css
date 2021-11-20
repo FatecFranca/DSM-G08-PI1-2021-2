@@ -21,12 +21,20 @@
     color: var(--cor-texto);
 }
 
+img{
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+}
+
 body {
     background-color: var(--cor-fundo);
     background-image: url("../images//Polygons.png");
     background-repeat: no-repeat;
-    background-position-y: 500px;
-    background-position-x: 200px;
+    background-position-y: 565px;
+    background-position-x: 50px;
 }
 
 .menu ul {
@@ -56,6 +64,12 @@ body {
     background: var(--cor-secundaria);
 }
 
+.menu_ativo{
+    background: var(--cor-secundaria);
+}
+
+
+
 .separator {
     font-size: 14px;
     color: #a8a8b3;
@@ -74,20 +88,65 @@ body {
 
 main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 300px;
+
+    grid-gap: 250px;
+    grid-auto-rows: 700px;
 }
 
 .conteudo_esquerdo {
     display: flex;
     justify-content: center;
     align-items: center;
+    grid-gap: 35px;
+    flex-direction: column;
 }
+
+.conteudo_esquerdo .titulo {
+    font-size: 36px;
+    text-align: center;
+    width: 350px;
+    text-decoration-style: wavy;
+}
+
+.custom_text{
+    background-color: var(--cor-secundaria);
+    background-position: 50% 50%;
+      
+        background-size: cover;
+}
+
+.conteudo_esquerdo .descricao {
+    font-size: 36px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.button {
+    text-decoration: none;
+    font-size: 36px;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: #f5e27f;
+    padding: 5px 70px;
+    text-align: center;
+    -webkit-box-shadow: -10px 5px 0px 3px rgba(245, 226, 127, 0.2);
+    box-shadow: -5px 5px 0px 3px rgba(245, 226, 127, 0.2);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.button:hover {
+    transform: scale(1.02);
+}
+
 
 .conteudo_direito {
     display: flex;
 
     justify-content: center;
-    align-items: end;
+    align-items: center;
 }
 
 .conteudo_direito ul {
@@ -101,18 +160,17 @@ main {
     display: flex;
 
     background-color: white;
-    padding: 0 10px;
+    padding: 0 5px;
     border-radius: 6px;
     -webkit-box-shadow: 4px 7px 14px 4px rgba(0, 0, 0, 0.32);
     box-shadow: 4px 7px 14px 4px rgba(0, 0, 0, 0.32);
     transition: all 0.5s;
 }
 
-.conteudo_direito li:hover{
+.conteudo_direito li:hover {
     transform: scale(1.05);
 }
 .conteudo_direito li a {
-   
     cursor: pointer;
 }
 
@@ -124,4 +182,39 @@ main {
 
 .item_ativo {
     border: 5px solid var(--cor-primaria-escura);
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section img {
+    display: flex;
+    position: absolute;
+}
+
+section .tenis {
+    transform: translateX(-100vh) scaleX(-1);
+    overflow: hidden;
+    z-index: -100;
+    animation: intro 1s forwards;
+}
+
+@keyframes intro {
+    0%{
+        opacity: 0;
+        filter: blur(10px);
+    }
+    100% {
+        opacity: 1;
+        z-index: 1;
+        transform: rotate(-20deg) scaleX(-1) 
+    }
+}
+
+section .sombra {
+    z-index: -101;
+    top: 450px;
 }
