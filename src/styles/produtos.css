@@ -1,1 +1,62 @@
-@import "default.css"
+@import "default.css";
+
+.container_produtos {
+  display: grid;
+  grid-template-areas: 'description' 'product' 'item';
+  grid-auto-flow: column;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  margin: 50px 300px;
+  background-color: var(--cor-secundaria);
+}
+
+.card_produtos {
+
+  display: flex;
+  grid-area: item;
+  align-items: center;
+  margin-bottom: 25px;
+  justify-content: center;
+  grid-gap: 2rem;
+}
+
+.card_produtos ul {
+  list-style-type: none;
+  display: flex;
+  grid-gap: 45px;
+}
+
+.card_produtos li {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding: 0 5px;
+  border-radius: 6px;
+  -webkit-box-shadow: 4px 7px 14px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 4px 7px 14px 4px rgba(0, 0, 0, 0.15);
+  transition: all 0.5s;
+}
+
+.card_produtos li:hover {
+  transform: scale(1.05);
+}
+.arrow{
+  transition: all 1s;
+}
+ .arrow img:hover {
+  transform: scale(1.10);
+}
+.card_produtos li a {
+  cursor: pointer;
+}
+
+.card_produtos li img {
+  max-width: 93px;
+  max-height: 105px;
+  transform: rotate(-10deg) scaleX(-1);
+}
+
+
+.produto {
+  grid-area: product;
+}
