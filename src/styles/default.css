@@ -218,3 +218,7 @@ section .sombra {
     z-index: -101;
     top: 450px;
 }
+
+h3 {
+    text-align: center;
+}
