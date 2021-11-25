@@ -52,91 +52,42 @@
 
 <p class="warning-message">Campos marcados com <span class="warning__sup-wrap">
     (<sup class="warning__sup">*</sup> )</span> são obrigatórios. <br><br>
-    <div>
-        <li class="form__item required">
-            <label for="id_nome" class="form__label">Nome completo<sup>*</sup></label>
-            <input type="text" name="nome" maxlength="255" required="" class="form__text" id="id_nome">
-        </li>
-    </div>
-
-    <div>
-
-        <li class="form__item">
-            <label for="id_num_pedido" class="form__label">Núm. pedido (se houver)</label>
-            <input type="number" name="num_pedido" min="0" class="form__text" id="id_num_pedido">
-        </li>
-    </div>
-
-    <div>
-
-        <li class="form__item required">
-            <label for="id_email" class="form__label">E-mail<sup>*</sup></label>
-            <input type="email" name="email" required="" class="form__text" id="id_email">
-        </li>
-    </div>
-
-    <div>
-        <label for="id_estado" class="form__label">UF</label>
-        <select id="UF">
-            <option>Acre</option>
-            <option>Alagoas</option>
-            <option>Amapá</option>
-            <option>Amazonas</option>
-            <option>Bahia</option>
-            <option>Ceará</option>
-            <option>Espirito Santo</option>
-            <option>Goiás</option>
-            <option>Maranhão</option>
-            <option>Mato Grosso</option>
-            <option>Mato Grosso do Sul</option>
-            <option>Minas Gerais</option>
-            <option>Pará</option>
-            <option>Paraíba</option>
-            <option>Paraná</option>
-            <option>Pernambuco</option>
-            <option>Piauí</option>
-            <option>Rio de Janeiro</option>
-            <option>Rio Grande do Norte</option>
-            <option>Rio Grande do Sul</option>
-            <option>Rondônia</option>
-            <option>Roraima</option>
-            <option>Santa catarina</option>
-            <option>São Paulo</option>
-            <option>Sergipe</option>
-            <option>tocantins</option>
-            <option>Distrito Federal</option>
-        </select>   
-    </div>
-
-    <div>
-        <li class="form__item coll-xs-6 pr0 required">
-            <label for="id_cidade" class="form__label">Cidade<sup>*</sup></label>
-            <input type="text" name="cidade" maxlength="255" required="" class="form__text" id="id_cidade">
-        </li>
-    </div>
-
-    <div>
-        <li class="form__item coll-xs-6 pl0">
-            <label for="id_cep" class="form__label">CEP</label>
-            <input type="text" name="cep" maxlength="255" class="form__text" id="id_cep" autocomplete="off">
-        </li>
-    </div>
-
-    <div>
-        <li class="form__item coll-xs-6 pr0">
-            <label for="id_telefone" class="form__label">Telefone</label>
-            <input type="text" name="telefone" class="form__text" id="id_telefone" autocomplete="off">
-        </li>
-    </div>
-
-    <div>
-        <li class="form__item required clear">
-            <label for="id_mensagem" class="form__label">Mensagem<sup>*</sup></label>
-            <textarea name="mensagem" cols="40" rows="10" required="" class="form__text-area" id="id_mensagem"></textarea>
-        </li>
-    </div>
-
 </p>
+
+<main>
+    <form>
+        <label for ="nomesobrenome">Nome e sobrenome</label>
+        <input type="text" id ="nomesobrenome"> 
+
+        <label for ="email">Email</label>
+        <input type="text" id ="email">
+
+        <label for ="telefone">Telefone</label>
+        <input type="text" id ="telefone">
+
+        <label for ="mensagem">Mensagem</label>
+        <textarea cols="70" rows="10" id="mensagem"></textarea>
+
+        <div>
+            <p>Como prefere nosso o contato?</p>
+
+            <label for="radio-email">Email</label>
+            <input type="radio" name="contato" value="email" id="radio-email">
+
+            <label for="radio-telefone">Telefone</label>
+            <input type="radio" name="contato" value="email" id="radio-telefone">
+
+            <label for="radio-whatsapp">WhatsApp</label>
+            <input type="radio" name="contato" value="email" id="radio-whatsapp">
+        </div>
+
+        <label><input type="checkbox" name="">Gostaria de receber nossas novidades por email?</label>
+
+        <input type="submit" value="Enviar formulário">
+    </form>
+</main>
+
+
     
 </body>
 
