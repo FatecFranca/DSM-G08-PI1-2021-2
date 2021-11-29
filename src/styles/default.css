@@ -8,6 +8,7 @@
     --cor-primaria: #c7f878;
     --cor-primaria-escura: #affc32;
     --cor-secundaria: #f2fbb0;
+    --cor-secundaria-escura: #F5E27F;
     --cor-texto: #000;
 
     --fonte-texto: "Poppins", sans-serif;
@@ -75,3 +76,19 @@ body {
     background: #cbdd13;
     margin: 0 30vw;
 }
+
+
+.custom_text {
+    background-color: var(--cor-secundaria);
+    background-position: 50% 50%;
+  
+    background-size: cover;
+}
+
+.custom_text_darker {
+    background-color: var(--cor-secundaria-escura);
+    background-position: 50% 50%;
+  
+    background-size: cover;
+}
+  
