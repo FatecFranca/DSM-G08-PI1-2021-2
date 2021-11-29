@@ -1,27 +1,113 @@
 @import "default.css";
-
-h3 {
-    text-align: center;
+.container {
+	margin: 5vh 15vw;
+	padding: 15px;
+	display: block;
+	background-color: var(--cor-secundaria);
+	z-index: -100;
 }
 
 main {
-	width: 940px;
-	margin: 0 auto;
+	display: flex;
+	justify-content: center;
 }
 
-form {
-	margin: 40px 0;
+.contato_body {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-content: center;
+	grid-gap: 25px;
 }
 
-form label {
+.contato_footer {
+	margin: 35px 0 ;
+
+}
+.options{
+	display: flex;
+	align-items: center;
+	flex-flow: column wrap;
+	grid-gap: 15px;
+	padding: 15px;
+}
+.form_group {
+	position: relative;
+	padding: 15px 0 0;
+	margin-top: 10px;
+}
+
+.form_field {
+	font-family: inherit;
+	width: 100%;
+	border: 0;
+	border-bottom: 2px solid #3d3d3d;
+	outline: 0;
+	font-size: 1.3rem;
+	color: var(--cor-texto);
+	padding: 7px 0;
+	background: transparent;
+	transition: border-color 0.2s;
+}
+
+.form_field::placeholder {
+	color: transparent;
+}
+.form_field:placeholder-shown ~ .form_label {
+	font-size: 1.3rem;
+	cursor: text;
+	top: 20px;
+}
+
+.form_label {
+	position: absolute;
+	top: 0;
 	display: block;
-	font-size: 20px;
-	margin: 0 0 10px;
+	transition: 0.2s;
+	font-size: 1rem;
+	color: #3d3d3d;
+}
+.form_field:focus {
+	padding-bottom: 6px;
+	font-weight: 700;
+	border-width: 3px;
+	border-image: linear-gradient(to right, #000, #000);
+	border-image-slice: 1;
+}
+.form_field:focus ~ .form_label {
+	position: absolute;
+	top: 0;
+	display: block;
+	transition: 0.2s;
+	font-size: 1rem;
+	color: #000;
+	font-weight: 700;
 }
 
-form input {
-	display: block;
-	margin: 0 0 20px;
-	padding: 10px 25px;
-	width: 50%;
+.form__field:required .form__field:invalid {
+	box-shadow: none;
+}
+
+
+.separator_form {
+    font-size: 25px;
+    color: #000000;
+    display: flex;
+
+    align-items: center;
+}
+
+.separator_form::before {
+    content: "";
+    flex: 1;
+    height: 3px;
+    background: #1f1f1f;
+		margin: 0 2vw;
+  
+}
+.separator_form::after {
+    content: "";
+    flex: 1;
+    height: 3px;
+    background: #1f1f1f;
+		margin: 0 2vw;
 }

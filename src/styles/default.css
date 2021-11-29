@@ -8,7 +8,7 @@
     --cor-primaria: #c7f878;
     --cor-primaria-escura: #affc32;
     --cor-secundaria: #f2fbb0;
-    --cor-secundaria-escura: #F5E27F;
+    --cor-secundaria-escura: #f5e27f;
     --cor-texto: #000;
 
     --fonte-texto: "Poppins", sans-serif;
@@ -57,7 +57,7 @@ body {
     background: var(--cor-secundaria);
 }
 
-.menu_ativo{
+.menu_ativo {
     background: var(--cor-secundaria);
 }
 
@@ -77,18 +77,35 @@ body {
     margin: 0 30vw;
 }
 
-
 .custom_text {
     background-color: var(--cor-secundaria);
     background-position: 50% 50%;
-  
+
     background-size: cover;
 }
 
 .custom_text_darker {
     background-color: var(--cor-secundaria-escura);
     background-position: 50% 50%;
-  
+
     background-size: cover;
 }
-  
+
+.text_center {
+    text-align: center;
+}
+.text_left {
+    text-align: left;
+}
+.text_right {
+    text-align: right;
+}
+.text_muted {
+    color: #666;
+    opacity: .5;
+}
+
+.text_warning {
+    color: #ff6f6f;
+}
+
