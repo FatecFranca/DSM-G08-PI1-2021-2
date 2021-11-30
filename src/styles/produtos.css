@@ -6,7 +6,7 @@
   grid-auto-flow: column;
   grid-template-rows: 50px 450px 200px;
   grid-template-columns: 1fr;
-  margin: 50px 300px;
+  margin: 50px 20%;
   background-color: var(--cor-secundaria);
   z-index: -100;
 
@@ -94,7 +94,6 @@
 }
 .produto_desciption .title {
   font-weight: 400;
-
 }
 .produto_desciption .description {
   font-weight: lighter;
@@ -129,4 +128,40 @@
     z-index: 1;
     transform: translate(0%);
   }
+}
+
+/*
+Media Queries
+*/
+
+@media screen and (max-width: 1450px) {
+  .container_produtos {
+    grid-template-rows: auto;
+    grid-auto-rows: 380px;
+    
+  }
+
+  .card_produtos {
+    align-items: center;
+    margin: 0;
+    justify-content: center;
+    grid-gap: 2rem;
+    z-index: 1000;
+  }
+
+  .produto_desciption {
+    margin: 0 auto;
+  }
+
+
+  
+}
+@media screen and (max-width: 1143px) {
+ 
+.container_produtos{
+  margin: 0;
+}
+
+
+  
 }

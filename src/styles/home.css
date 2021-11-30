@@ -13,7 +13,7 @@ main {
 
   grid-gap: 250px;
   grid-auto-rows: 700px;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .conteudo_esquerdo {
@@ -36,8 +36,6 @@ main {
   font-weight: lighter;
   text-align: center;
 }
-
-
 
 .conteudo_direito {
   display: flex;
@@ -87,7 +85,7 @@ section {
   align-items: center;
 }
 
-section img {
+section .sombra {
   display: flex;
   position: absolute;
 }
@@ -118,6 +116,13 @@ section .sombra {
   top: 450px;
 }
 
+.arrow {
+  display: none;
+  align-items: center;
+
+  justify-content: space-between;
+  z-index: 100;
+}
 /*
 Media Queries
 */
@@ -131,17 +136,58 @@ Media Queries
     grid-auto-rows: 200px;
   }
 
+  section .tenis {
+    justify-content: center;
+    width: 70vw;
+  }
+  .conteudo_direito {
+    display: none;
+  }
+
+  section .tenis {
+    transform: translateX(-100vh) scaleX(-1);
+    overflow: hidden;
+    z-index: -100;
+    animation: intro 1s forwards;
+
+  }
+
   .conteudo_direito ul {
     flex-flow: row wrap;
   }
 
-  section .sombra {
-    top: 696px;
+  .conteudo_esquerdo {
+    width: 100vw;
   }
-  
 
+  section{
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+
+  .arrow {
+    display: flex;
+  }
+
+  section .sombra {
+    width: 85vw;
+    display: none;
+  }
+
+
+  @keyframes intro {
+    0% {
+      opacity: 0;
+      filter: drop-shadow(70px 25px 10px rgba(0, 0, 0, 0.6));
+    }
+  
+    100% {
+      opacity: 1;
+      z-index: 1;
+      transform: rotate(-5deg) scaleX(-1);
+    }
+  }
 }
 
 @media screen and (max-width: 600px) {
- 
 }
