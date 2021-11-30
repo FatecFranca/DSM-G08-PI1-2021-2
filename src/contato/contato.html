@@ -11,7 +11,7 @@
 
 <body>
     <header class="header">
-        <nav  tabindex="1" class="menu">
+        <nav tabindex="1" class="menu">
             <ul>
                 <li class="menu_item menu_ativo">
                     <a href="./contato.html">
@@ -61,21 +61,21 @@
                     </div>
 
                     <div class="form_group field">
-                        <input type="input" class="form_field" placeholder="Name" name="name" id='name' required />
-                        <label for="name" class="form_label">Sobrenome *</label>
+                        <input type="input" class="form_field" placeholder="Name" name="sobrenome" id='sobrenome' required />
+                        <label for="sobrenome" class="form_label">Sobrenome *</label>
                     </div>
 
 
                     <div class="form_group field">
-                        <input type="input" class="form_field" placeholder="Email" name="email" required />
+                        <input type="input" class="form_field" placeholder="Email" name="email" id="email" required />
                         <label for="email" class="form_label">Email *</label>
                     </div>
 
 
 
                     <div class="form_group field">
-                        <input type="input" class="form_field" placeholder="Name" name="name" id='name' required />
-                        <label for="name" class="form_label">Telefone *</label>
+                        <input type="input" class="form_field" placeholder="Telefone" name="telefone" id='telefone' required />
+                        <label for="telefone" class="form_label">Telefone *</label>
                     </div>
 
                     <div class="form_group field">
@@ -86,30 +86,36 @@
 
 
 
-                <div class="contato_footer">
+                <div class="contato_options">
                     <h3 class="text_center separator_form">Como prefere nosso o contato?</h3>
 
 
                     <div class="options">
 
                         <label class="container_radio" for="radio-email"> <input class="checkbox" type="radio"
-                                name="contato" value="email" id="radio-email"> <span class="checkmark"></span>
+                                name="contato" value="email" id="radio-email"> <span class="checkmark radio"></span>
                             Email</label>
 
                         <label class="container_radio" for="radio-whatsapp"> <input class="checkbox" type="radio"
-                                name="contato" value="whatsapp" id="radio-whatsapp"> <span class="checkmark"></span>
+                                name="contato" value="whatsapp" id="radio-whatsapp"> <span
+                                class="checkmark radio"></span>
                             WhatsApp</label>
 
                         <label class="container_radio" for="radio-telefone"> <input class="checkbox" type="radio"
-                                name="contato" value="telefone" id="radio-telefone"> <span class="checkmark"></span>
+                                name="contato" value="telefone" id="radio-telefone"> <span
+                                class="checkmark radio"></span>
                             Telefone</label>
 
                     </div>
                 </div>
 
-                <label><input type="checkbox" name="">Gostaria de receber nossas novidades por email?</label>
+                <div class="contato_footer">
+                    <label class="container_radio "><input class="checkbox" type="checkbox" name=""><span
+                            class="checkmark"></span>Gostaria de receber nossas novidades por email?</label>
 
-                <input type="submit" value="Enviar formulário">
+                    <input class="button" type="submit" value="Enviar formulário">
+                </div>
+
             </form>
         </main>
     </div>

@@ -37,24 +37,7 @@ main {
   text-align: center;
 }
 
-.button {
-  text-decoration: none;
-  font-size: 36px;
-  outline: none;
-  border: none;
-  color: white;
-  background-color: #f5e27f;
-  padding: 5px 70px;
-  text-align: center;
-  -webkit-box-shadow: -10px 5px 0px 3px rgba(245, 226, 127, 0.2);
-  box-shadow: -5px 5px 0px 3px rgba(245, 226, 127, 0.2);
-  cursor: pointer;
-  transition: all 0.5s;
-}
 
-.button:hover {
-  transform: scale(1.02);
-}
 
 .conteudo_direito {
   display: flex;
