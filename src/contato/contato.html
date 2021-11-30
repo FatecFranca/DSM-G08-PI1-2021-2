@@ -44,14 +44,14 @@
 
     <div class="container">
         <h3 class="text_center separator_form">Fale conosco</h3>
-       
+
         <!-- aqui adicionar link "clique aqui"
         <span>Para troca e devolução <a href="#">clique aqui</a></span><br><br> -->
 
         <p class="text_right text_muted">Campos marcados com <span>
                 (<sup class="warning__sup">*</sup> )</span> são obrigatórios. <br><br>
         </p>
-       
+
         <main>
             <form>
                 <div class="contato_body">
@@ -75,12 +75,12 @@
 
                     <div class="form_group field">
                         <input type="input" class="form_field" placeholder="Name" name="name" id='name' required />
-                        <label for="name" class="form_label">Telefone</label>
+                        <label for="name" class="form_label">Telefone *</label>
                     </div>
 
                     <div class="form_group field">
-                        <textarea class="form_field" cols="70" rows="3" id="mensagem"></textarea>
-                        <label class="form_label" for="mensagem">Mensagem</label>
+                        <textarea class="form_field" cols="70" rows="3" required id="mensagem"></textarea>
+                        <label class="form_label" for="mensagem">Mensagem *</label>
                     </div>
                 </div>
 
@@ -90,21 +90,21 @@
                     <h3 class="text_center separator_form">Como prefere nosso o contato?</h3>
 
 
-                   <div class="options">
-                    <label for="radio-email">
-                        <input type="radio" name="contato" value="email" id="radio-email">
-                        Telefone
-                    </label>
+                    <div class="options">
 
+                        <label class="container_radio" for="radio-email"> <input class="checkbox" type="radio"
+                                name="contato" value="email" id="radio-email"> <span class="checkmark"></span>
+                            Email</label>
 
+                        <label class="container_radio" for="radio-whatsapp"> <input class="checkbox" type="radio"
+                                name="contato" value="whatsapp" id="radio-whatsapp"> <span class="checkmark"></span>
+                            WhatsApp</label>
 
-                    <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">
-                        Email</label>
+                        <label class="container_radio" for="radio-telefone"> <input class="checkbox" type="radio"
+                                name="contato" value="telefone" id="radio-telefone"> <span class="checkmark"></span>
+                            Telefone</label>
 
-
-                    <label for="radio-whatsapp"> <input type="radio" name="contato" value="email" id="radio-whatsapp">
-                        WhatsApp</label>
-                   </div>
+                    </div>
                 </div>
 
                 <label><input type="checkbox" name="">Gostaria de receber nossas novidades por email?</label>
