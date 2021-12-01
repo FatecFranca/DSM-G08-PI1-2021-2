@@ -1,1 +1,85 @@
 @import "default.css";
+
+.container {
+  display: grid;
+
+  grid-auto-flow: row;
+  padding: 20px;
+  grid-template-columns: 1fr;
+  margin: 50px 15%;
+  grid-gap: 15px;
+  background-color: var(--cor-secundaria);
+  z-index: -100;
+  overflow: hidden;
+}
+
+.card {
+  padding: 10px 25px;
+  background-color: var(--cor-secundaria-clara);
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 7px 14px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.15);
+}
+.card_text{
+  overflow: hidden;
+
+}
+
+.text {
+  animation: digitando 1s ease;
+}
+.card_text ul {
+  display: flex;
+  animation: digitando 1s ease;
+  flex-direction: column;
+  align-items: center;
+  grid-gap: 10px;
+  list-style-type: decimal;
+}
+.card_text li {
+  padding: 3px;
+  border-radius: 10px;
+  background-color: var(--cor-secundaria-escura);
+ 
+}
+.card_text li::marker {
+  content: counter(list-item) ". ";
+  font-size: 1rem;
+  color: #666;
+}
+
+.separator_form{
+  animation: intro_description 1s ease;
+}
+
+/* Animações */
+
+@keyframes digitando {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+
+@keyframes intro_description {
+  0% {
+    opacity: 0;
+
+    transform: translate(100%);
+  }
+
+  100% {
+    opacity: 1;
+    z-index: 1;
+    transform: translate(0%);
+  }
+}
+
+@media screen and (max-width: 855px) {
+  .container{
+    margin: 0;
+  }
+}

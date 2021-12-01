@@ -167,28 +167,7 @@ main {
 	box-shadow: none;
 }
 
-.separator_form {
-	font-size: 25px;
-	color: #000000;
-	display: flex;
-	animation: intro_separators 1.5s forwards;
-	align-items: center;
-}
 
-.separator_form::before {
-	content: "";
-	flex: 1;
-	height: 3px;
-	background: #1f1f1f;
-	margin: 0 2vw;
-}
-.separator_form::after {
-	content: "";
-	flex: 1;
-	height: 3px;
-	background: #1f1f1f;
-	margin: 0 2vw;
-}
 
 /*
 	Animações
