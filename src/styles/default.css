@@ -2,6 +2,7 @@
     Tudo que será usado várias vezes e em vários lugares no CSS, ficará aqui
     Esse será um arquivo GLOBAL do CSS
 */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap");
 :root {
     --cor-fundo: #f3fbe6;
@@ -178,7 +179,62 @@ body {
   .button:hover {
     transform: scale(1.02);
   }
+  
+  .redes_sociais{
+	padding: 5px;
+	margin: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
 
+.redes_sociais a{
+	text-decoration: none;
+}
+
+.redes_sociais ul {
+	padding: 0;
+	display: flex;
+	list-style: none;
+	justify-content: center;
+	grid-gap: 1rem;
+}
+
+
+.redes_sociais .fa {
+  padding: 20px;
+  font-size: 30px;
+
+  text-align: center;
+  text-decoration: none;
+
+}
+
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+
+}
+
+
+.fa-whatsapp {
+  background: #01e675;
+  color: white;
+}
+
+.fa-instagram {
+  background: #fa7901;
+  color: white;
+}
 /*
 Media Queries
 */
@@ -307,3 +363,5 @@ Media Queries
    
    
 }
+
+
