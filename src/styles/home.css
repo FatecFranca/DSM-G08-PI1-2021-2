@@ -9,9 +9,9 @@ img {
 
 main {
   display: grid;
-  grid-template-columns: 1fr 1fr 300px;
-
-  grid-gap: 250px;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+  grid-gap: 10vw;
   grid-auto-rows: 700px;
   transition: all 0.5s;
 }
@@ -20,19 +20,20 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+
   grid-gap: 35px;
   flex-direction: column;
 }
 
 .conteudo_esquerdo .titulo {
-  font-size: 36px;
+  font-size: 1.8rem;
   text-align: center;
   width: 350px;
   text-decoration-style: wavy;
 }
 
 .conteudo_esquerdo .descricao {
-  font-size: 36px;
+  font-size: 1.5rem;
   font-weight: lighter;
   text-align: center;
 }
@@ -87,13 +88,17 @@ section {
 
 section .sombra {
   display: flex;
+  width: 55vw;
   position: absolute;
+  z-index: -101;
+  top: 450px;
 }
 
 section .tenis {
   transform: translateX(-100vh) scaleX(-1);
   overflow: hidden;
   z-index: -100;
+  width: 30vw;
   animation: intro 1s forwards;
   filter: drop-shadow(10px 25px 10px rgba(0, 0, 0, 0.6));
 }
@@ -111,10 +116,6 @@ section .tenis {
   }
 }
 
-section .sombra {
-  z-index: -101;
-  top: 450px;
-}
 
 .arrow {
   display: none;
@@ -170,7 +171,7 @@ Media Queries
   }
 
   section .sombra {
-    width: 85vw;
+    width: 60vw;
     display: none;
   }
 

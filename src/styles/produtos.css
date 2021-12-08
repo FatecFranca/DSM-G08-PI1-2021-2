@@ -54,8 +54,8 @@
 }
 
 .card_produtos li img {
-  width: 93px;
-  height: 90px;
+  max-width: 93px;
+  max-height: 90px;
   transform: rotate(-10deg) scaleX(-1);
 }
 

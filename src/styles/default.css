@@ -32,10 +32,11 @@ img {
     -moz-user-drag: none;
     -o-user-drag: none;
     user-drag: none;
+    
 }
 body {
-    /* max-width: 100vw;
-    max-height: 100vw; */
+    max-width: 100vw;
+    max-height: 100vw;
     background-color: var(--cor-fundo);
     background-image: url("../images/Polygons.png");
     background-repeat: no-repeat;
@@ -163,7 +164,7 @@ body {
 
 .button {
     text-decoration: none;
-    font-size: 36px;
+    font-size: 2.0rem;
     outline: none;
     border: none;
     color: white;
@@ -183,6 +184,7 @@ body {
   .redes_sociais{
 	padding: 5px;
 	margin: 5px;
+  
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -200,6 +202,10 @@ body {
 	list-style: none;
 	justify-content: center;
 	grid-gap: 1rem;
+}
+
+.redes_sociais li {
+    height: 40px;
 }
 
 
